@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="TicTacToe_Style.css">
+    <script src="TicTacToe.js" defer></script>
+</head>
+<body id = "blurred">
+    <main>
+        <section class="display_side">
+            <div class="pick" id="player_pick">
+                <h2>PLAYER</h2>
+
+            </div>
+            <div class="pick" id="AI_pick">
+                <h2>OPPONENT</h2>
+
+            </div>
+        </section>
+        <section class="container">
+            <div class="box_container">
+                <div class="box" id="1">
+
+                </div>
+                <div class="box" id="2">
+
+                </div>
+                <div class="box" id="3">
+
+                </div>
+                <div class="box" id="4">
+ 
+                </div>
+                <div class="box" id="5">
+
+                </div>
+                <div class="box" id="6">
+
+                </div>
+                <div class="box" id="7">
+                
+                </div>
+                <div class="box" id="8">
+
+                </div>
+                <div class="box" id="9">
+
+                </div>
+            </div>
+        </section>
+        <section class="start / restart">
+            <div class="start">
+                <dialog id="showPick">
+                    <form class="chooseSide">
+                        <h2>Pick Side</h2>
+                        <button value="X_Side" id="X_Pick" >
+                            <img src="X_colored.png" alt="X Image">
+                        </button>
+                        <button value="O_Side" id="O_Pick" formmethod="dialog">
+                            <img src="O_colored.png" alt="O image">
+                        </button>
+                    </form>
+                </dialog>
+                <button class="bottom_button" id="showPlayerPick">
+                    START
+                </button>
+            </div>
+            <div class="restart">
+                <dialog id = "try_again" >
+                    <form id="display_winner">
+                        <h1 id="winner"></h1>
+                        <button value="restart" id="tryAgain" formmethod="dialog">Try Again</button>
+                    </form>
+                </dialog>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
